@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  font-family: 'Montserrat';
+  
+}
+header {
+  position: absolute;
+  padding: 1em;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: white;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.nav-links a {
+  padding: 1em;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: auto;
+}
+section {
+  padding: 3em;
+}
+h1, h2, .button {
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.4rem;
+}
+.button {
+  color: black;
+  font-weight: bold;
+  background: url('/IMG/Vector\ 1.png') no-repeat;
+  background-size: 8px;
+  background-position: 0 1px;
+  padding-left: 1em;
+}
+.primary {
+  padding: 1.5em 1.5em 1.5em  4em;
+  background-position: 3em;
+  display: inline-block;
+  border: 1px solid grey;
+  margin-top: 3em;
+  margin-left: -3em;
+}
+.title {
+  overflow: hidden;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.hero .title h1{
+  font-size: 2em;
+}
+.hero {
+  padding-top: 8em;
+  background: url(/IMG/guitarist.jpg);
+  background-size: cover;
+}
+.anim-panel p{
+  padding-bottom: 1rem;
+}
+.cta p {
+  width: 60%;
+  font-size: 1.2rem;
+}
+section.side-bar, section.subscribe {
+  font-size: .9rem;
+  line-height: 1.6em;
+}
+.side-bar {
+  background: #FF9921;
+}
+
+.subscribe input {
+  width: 95%;
+  padding: 1em;
+  font-family: 'Montserrat';
+  margin-bottom: 1em;
+}
+.subscribe .submit {
+  width: 95%;
+  background: black;
+  color: white;
+  padding: 1em;
+  border: none;
+  font-family: 'Montserrat';
+  
+}
+@media only screen and (min-width: 763px) {
+  html{
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  header{
+    background: none;
+  }
+  .wrapper {
+    grid-template-columns: 70% auto;
+    grid-template-rows: 60% auto;
+    height: 100vh;
+  }
+  section {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+  }
+  .hero {
+    grid-row: 1/3;
+  }
+  .cta p {
+    width: 100%;
+  }
+  .subscribe{
+    grid-column: 2/3;
+  }
+  .title {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .wrapper {
+    grid-template-columns: 75% auto;
+  }
+}
+
