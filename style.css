@@ -5,8 +5,7 @@
 }
 body {
   height: 100%;
-  font-family: 'Montserrat';
-  
+  font-family: "Montserrat";
 }
 header {
   position: absolute;
@@ -41,7 +40,9 @@ header a {
 section {
   padding: 3em;
 }
-h1, h2, .button {
+h1,
+h2,
+.button {
   text-transform: uppercase;
 }
 h2 {
@@ -50,13 +51,13 @@ h2 {
 .button {
   color: black;
   font-weight: bold;
-  background: url('/IMG/Vector\ 1.png') no-repeat;
+  background: url("IMG/Vector\ 1.png") no-repeat;
   background-size: 8px;
   background-position: 0 1px;
   padding-left: 1em;
 }
 .primary {
-  padding: 1.5em 1.5em 1.5em  4em;
+  padding: 1.5em 1.5em 1.5em 4em;
   background-position: 3em;
   display: inline-block;
   border: 1px solid grey;
@@ -68,33 +69,34 @@ h2 {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
-.hero .title h1{
+.hero .title h1 {
   font-size: 2em;
 }
 .hero {
   padding-top: 8em;
-  background: url(/IMG/guitarist.jpg);
+  background: url(IMG/guitarist.jpg);
   background-size: cover;
 }
-.anim-panel p{
+.anim-panel p {
   padding-bottom: 1rem;
 }
 .cta p {
   width: 60%;
   font-size: 1.2rem;
 }
-section.side-bar, section.subscribe {
-  font-size: .9rem;
+section.side-bar,
+section.subscribe {
+  font-size: 0.9rem;
   line-height: 1.6em;
 }
 .side-bar {
-  background: #FF9921;
+  background: #ff9921;
 }
 
 .subscribe input {
   width: 95%;
   padding: 1em;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   margin-bottom: 1em;
 }
 .subscribe .submit {
@@ -103,16 +105,15 @@ section.side-bar, section.subscribe {
   color: white;
   padding: 1em;
   border: none;
-  font-family: 'Montserrat';
-  
+  font-family: "Montserrat";
 }
 @media only screen and (min-width: 763px) {
-  html{
+  html {
     font-size: 18px;
   }
 }
 @media only screen and (min-width: 1020px) {
-  header{
+  header {
     background: none;
   }
   .wrapper {
@@ -131,7 +132,7 @@ section.side-bar, section.subscribe {
   .cta p {
     width: 100%;
   }
-  .subscribe{
+  .subscribe {
     grid-column: 2/3;
   }
   .title {
@@ -143,4 +144,3 @@ section.side-bar, section.subscribe {
     grid-template-columns: 75% auto;
   }
 }
-
