@@ -77,11 +77,12 @@ h2 {
   background: url(IMG/guitarist.jpg);
   background-size: cover;
 }
+
 .anim-panel p {
   padding-bottom: 1rem;
 }
 .cta p {
-  width: 60%;
+  width: 80%;
   font-size: 1.2rem;
 }
 section.side-bar,
@@ -106,6 +107,11 @@ section.subscribe {
   padding: 1em;
   border: none;
   font-family: "Montserrat";
+}
+@media only screen and (min-width: 500px) {
+.cta p {
+  width: 65%;
+}
 }
 @media only screen and (min-width: 763px) {
   html {
